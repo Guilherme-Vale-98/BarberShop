@@ -31,7 +31,7 @@ const Navbar = (props: Props) => {
 
   return (
     <>
-      <nav className='flex pb-[54px] lg:pb-[94px] px-[72px] pt-[40px] bg-black justify-between w-full'>
+      <nav className='flex pb-[40px] px-[72px] pt-[40px] bg-black justify-between w-full'>
         <div>
           <ScissorsIcon size={48} color="#E9C664" strokeWidth={2.75} />
         </div>
@@ -47,7 +47,7 @@ const Navbar = (props: Props) => {
           ))}
         </div>
 
-        <Button className="hidden md:inline w-[191px] md:w-[170px] text-[14px] text-white transition-all transform hover:bg-[#E9C664] hover:text-black ease-in-out duration-300 font-black h-[50px] border-2 border-[#E9C664]">
+        <Button className="hidden md:inline w-[191px] md:w-[170px] text-[14px] text-white transition-all transform hover:bg-themeYellow hover:text-black ease-in-out duration-300 font-black h-[50px] border-2 border-themeYellow">
           Book Appointment
         </Button>
         <div className='text-white md:hidden'>
@@ -67,8 +67,8 @@ const Navbar = (props: Props) => {
                 onClick={toggleNavigation}
                 className={`
                   text-2xl font-bold 
-                  ${pathname === navItem.url ? 'text-[#E9C664]' : 'text-white'}
-                  hover:text-[#E9C664] 
+                  ${pathname === navItem.url ? 'text-themeYellow' : 'text-white'}
+                  hover:text-themeYellow 
                   transition-colors duration-300
                 `}
               >
@@ -82,7 +82,7 @@ const Navbar = (props: Props) => {
                 w-[250px] 
                 text-[16px] 
                 text-black 
-                bg-[#E9C664] 
+                bg-themeYellow 
                 hover:bg-white 
                 transition-all 
                 transform 
