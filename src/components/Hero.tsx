@@ -1,13 +1,12 @@
 "use client"
 import React from 'react'
-import { Abril_Fatface } from 'next/font/google'
-import { Bebas_Neue } from 'next/font/google'
+
 
 import { motion } from "motion/react"
+import { abril } from '@/app/constants'
 
 type Props = {}
-const abril = Abril_Fatface({ subsets: ['latin'], weight: '400' })
-const bebas = Bebas_Neue({ subsets: ['latin'], weight: '400' })
+
 
 
 const Hero = (props: Props) => {
@@ -17,7 +16,7 @@ const Hero = (props: Props) => {
     };
     const fadeIn = {
         hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: 0.5, ease: "easeInOut", delay: 0.5 } },
+        visible: { opacity: 1, transition: { duration: 0.5, ease: "easeInOut", delay: 0.6 } },
     };
     const backgroundStyle = {
         backgroundImage: "url('/hero.png')",
