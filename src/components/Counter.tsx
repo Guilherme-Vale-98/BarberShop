@@ -1,25 +1,34 @@
 "use client"
 import { abril, counterItems } from '@/app/constants'
-import { animate, motion, useMotionValue } from 'motion/react'
+import { animate, motion, useInView, useMotionValue } from 'motion/react'
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
-function counting(value: number) {
+function Counting({value}:{value: number}) {
     const count = useMotionValue(0)
+    const [hasAnimated, setHasAnimated] = useState(false)
 
     useEffect(() => {
-        const controls = animate(count, value, { ease: "easeInOut",duration: 2, onUpdate: (latest) =>
-         count.set(Math.round(latest)) 
-        })
-        return () => controls.stop()
-    }, [value])
+        if (!hasAnimated) {
+            const controls = animate(count, value, {
+                ease: "easeInOut", duration: 2, onUpdate: (latest) =>
+                    count.set(Math.round(latest)), onComplete: () => setHasAnimated(true)
+            })
+            return () => controls.stop()
+        }
+    }, [value, hasAnimated])
 
-    return <motion.div>{count}</motion.div>
+    return <motion.div
+
+    >{count}</motion.div>
 }
 
 const Counter = () => {
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
+
     return (
-        <section className={`${abril.className} flex flex-col gap-7 sm:gap-0 sm:flex-row items-center  justify-between w-full bg-[#212121] py-[60px]  sm:px-[60px] md:px-[130px] text-white`}>
+        <section ref={ref} className={`${abril.className} flex flex-col gap-7 sm:gap-0 sm:flex-row items-center  justify-between w-full bg-[#212121] py-[60px]  sm:px-[60px] md:px-[130px] text-white`}>
             {counterItems.map((counterItem, index) => (
                 <div key={index} className=' flex w-40 flex-col justify-center items-center'>
                     <div className='relative  w-[40px] h-[80px]'>
@@ -35,9 +44,9 @@ const Counter = () => {
                     </div>
 
                     <div className='text-6xl my-[30px] text-themeYellow'>
-                        {counting(counterItem.count)}
+                        {isInView && <Counting value={counterItem.count}/>}
                     </div>
-                    <div className='text-xl text-center'>{counterItem.title}</div>
+                    <div className='text-2xl text-center'>{counterItem.title}</div>
                 </div>
             ))}
         </section>
