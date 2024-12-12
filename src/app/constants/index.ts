@@ -5,6 +5,8 @@ import iconMustache from "../../../public/icon mustache.png";
 import iconRazor from "../../../public/icon razor.png";
 import iconBeard from "../../../public/icon beard.png";
 import iconScissors from "../../../public/icon scissors.png";
+import iconBeardRazor from "../../../public/icon beardrazor.png";
+import iconBarbershop from "../../../public/icon barbershop.png";
 import { StaticImageData } from "next/image";
 
 export const abril = Abril_Fatface({ subsets: ["latin"], weight: "400" });
@@ -16,9 +18,34 @@ export interface Service {
   title: string;
   description: string;
   iconUrl: StaticImageData;
-  alt: string; 
+  alt: string;
 }
-
+export interface CounterItem {
+  id: number;
+  title: string;
+  count: number;
+  logo: StaticImageData
+}
+export const counterItems: CounterItem[] = [
+  {
+    id: 1,
+    title: "SHAVES",
+    count: 2500,
+    logo: iconBeardRazor
+  },
+  {
+    id: 2,
+    title: "HAIRCUTS",
+    count: 4500,
+    logo: iconScissors
+  },
+  {
+    id: 3,
+    title: "OPENSHOPS",
+    count: 23,
+    logo: iconBarbershop
+  },
+];
 export const services: Service[] = [
   {
     id: 1,
