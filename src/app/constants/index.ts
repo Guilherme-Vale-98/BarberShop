@@ -7,6 +7,10 @@ import iconBeard from "../../../public/icon beard.png";
 import iconScissors from "../../../public/icon scissors.png";
 import iconBeardRazor from "../../../public/icon beardrazor.png";
 import iconBarbershop from "../../../public/icon barbershop.png";
+import client1 from "../../../public/client 1.png";
+import client2 from "../../../public/client 2.png";
+import client3 from "../../../public/client 3.png";
+
 import { StaticImageData } from "next/image";
 
 export const abril = Abril_Fatface({ subsets: ["latin"], weight: "400" });
@@ -26,6 +30,36 @@ export interface CounterItem {
   count: number;
   logo: StaticImageData
 }
+export interface ReviewItem {
+  id: number;
+  name: string;
+  review: string;
+  photo: StaticImageData
+}
+
+
+export const reviewItems: ReviewItem[] = [
+  {
+    id: 1,
+    name: "GLEN SPARKLE",
+    review: "Best haircut I've ever had! The barbers here are true professionals. They took the time to understand exactly what I wanted and delivered a precise, stylish cut. The attention to detail is incredible.",
+    photo: client1
+  },
+  {
+    id: 2,
+    name: "DAVID RODRIGUEZ",
+    review: "I've tried barbershops all over the city, and this place stands out. The barbers know how to create sharp, clean lines that make a real difference. The classic styling combined with modern techniques is exactly what I look for.",
+    photo: client2
+  },
+  {
+    id: 3,
+    name: "MICHAEL JOHNSON",
+    review: "This barbershop is a game-changer. Clean, professional environment, skilled barbers who really know their craft. My fade is always perfect, and the service is consistently excellent. This is more than a haircut - it's an experience.",
+    photo: client3
+  }
+ ]
+
+
 export const counterItems: CounterItem[] = [
   {
     id: 1,
