@@ -14,6 +14,7 @@ export default function App() {
             <Counter/>
             <Review/>
             <Brands/>
+            
         </>
     );
 }
