@@ -11,7 +11,7 @@ function Counting({value}:{value: number}) {
     useEffect(() => {
         if (!hasAnimated) {
             const controls = animate(count, value, {
-                ease: "easeInOut", duration: 2, onUpdate: (latest) =>
+                ease: "easeInOut", duration: 1.5, onUpdate: (latest) =>
                     count.set(Math.round(latest)), onComplete: () => setHasAnimated(true)
             })
             return () => controls.stop()
