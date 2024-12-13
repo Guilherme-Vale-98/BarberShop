@@ -1,4 +1,5 @@
 import Brands from "@/components/Brands";
+import ContactUs from "@/components/ContactUs";
 import Counter from "@/components/Counter";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -14,7 +15,7 @@ export default function App() {
             <Counter/>
             <Review/>
             <Brands/>
-            
+            <ContactUs/>
         </>
     );
 }
