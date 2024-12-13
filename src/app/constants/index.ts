@@ -11,6 +11,8 @@ import iconLocation from "../../../public/icon location.png";
 import iconEnvelope from "../../../public/icon envelope.png";
 import iconPhone from "../../../public/icon phone.png";
 import iconClock from "../../../public/icon clock.png";
+import iconFacial from "../../../public/icon facial.png";
+import iconHair from "../../../public/icon hair.png";
 import client1 from "../../../public/client 1.png";
 import client2 from "../../../public/client 2.png";
 import client3 from "../../../public/client 3.png";
@@ -96,8 +98,8 @@ export const services: Service[] = [
   {
     id: 1,
     title: "Haircut & Beard Trim",
-    description:
-      "Duis porta, ligula rhoncus euismod od pretium, nisi tellus eleifend odio, luctus viverra sem.",
+    description: 
+      "Precision grooming that transforms your look. Expert stylists craft the perfect cut tailored to your face shape and personal style.",
     iconUrl: iconScissors,
     alt: "Icon of scissors for Haircut & Beard Trim",
   },
@@ -105,7 +107,7 @@ export const services: Service[] = [
     id: 2,
     title: "Shaves & Haircut",
     description:
-      "Duis porta, ligula rhoncus euismod od pretium, nisi tellus eleifend odio, luctus viverra sem.",
+      "The ultimate gentleman's grooming experience. Classic close shave meets precision haircut for a refined, polished appearance.",
     iconUrl: iconRazor,
     alt: "Icon of a razor for Shaves & Haircut",
   },
@@ -113,7 +115,7 @@ export const services: Service[] = [
     id: 3,
     title: "Facial & Shave",
     description:
-      "Duis porta, ligula rhoncus euismod od pretium, nisi tellus eleifend odio, luctus viverra sem.",
+      "Revitalize your skin with deep cleansing and exfoliation. Professional shave ensures a smooth, comfortable finish.",
     iconUrl: iconBeard,
     alt: "Icon of a beard for Facial & Shave",
   },
@@ -121,12 +123,27 @@ export const services: Service[] = [
     id: 4,
     title: "The Big Day",
     description:
-      "Duis porta, ligula rhoncus euismod od pretium, nisi tellus eleifend odio, luctus viverra sem.",
+      "Premium grooming package for your most important moments. Complete transformation to ensure you look and feel your absolute best.",
     iconUrl: iconMustache,
     alt: "Icon of a mustache for The Big Day service",
   },
+  {
+    id: 5,
+    title: "Facial",
+    description:
+      "Personalized facial treatments tailored to your skin type. Deep cleansing and targeted care for a refreshed, glowing complexion.",
+    iconUrl: iconFacial,
+    alt: "Icon of facial treatment for skin care",
+  },
+  {
+    id: 6,
+    title: "Hair Styling",
+    description:
+      "Expert styling that brings your personality to life. Modern techniques and premium products create your perfect look.",
+    iconUrl: iconHair,
+    alt: "Icon of hair styling tools",
+  },
 ];
-
 export const contactInfos: ContactInfo[] = [
   {
     id: 1,
