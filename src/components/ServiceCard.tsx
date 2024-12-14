@@ -2,16 +2,18 @@
 import { abril, inter, Service } from "@/app/constants";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 type Props = {
     service: Service;
 };
 
 const ServiceCard = ({ service }: Props) => {
+    const pathname = usePathname()
     return (
         <motion.div
             key={service.id}
-            className="border border-themeYellow md:h-[310px] md:w-[45%] lg:w-[324px] p-8 flex flex-col items-center text-center"
+            className={`border border-themeYellow md:h-[310px] ${pathname ==="services"? "md:w-[45%]" : "md:w-[25%]"} p-8 flex flex-col items-center text-center`}
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }} 
             viewport={{ once: true, amount: 0.2 }} 

@@ -174,3 +174,42 @@ export const contactInfos: ContactInfo[] = [
     alt: "Icon representing working hours",
   },
 ];
+
+
+export interface PricingItem {
+  id: number;
+  title: string;
+  description: string;
+  price: number;
+}
+
+export const pricingItems: PricingItem[] = [
+  {
+    id: 1,
+    title: "Haircut",
+    description:
+      "Experience a professional haircut tailored to your style, delivered by skilled barbers using precision techniques.",
+    price: 20,
+  },
+  {
+    id: 2,
+    title: "Shaving",
+    description:
+      "Enjoy a clean and close shave with premium products, ensuring smooth and refreshed skin every time.",
+    price: 15,
+  },
+  {
+    id: 3,
+    title: "Trimming",
+    description:
+      "Get a sharp and well-defined trim to maintain your beard or hair with expert care and attention to detail.",
+    price: 15,
+  },
+  {
+    id: 4,
+    title: "Facial",
+    description:
+      "Rejuvenate your skin with a relaxing facial treatment designed to cleanse, hydrate, and refresh your complexion.",
+    price: 20,
+  },
+];

@@ -12,7 +12,7 @@ type Props = {
 const renderCards = (showTitle: boolean)=>{
     if(!showTitle){
         return (
-            <div className="flex flex-wrap items-center justify-center gap-8 px-4 sm:px-6 md:px-8 lg:px-10 mt-10 min-w-[328px] w-[60%] mx-auto md:w-[90%]">
+            <div className="flex flex-wrap items-center justify-center gap-8 px-4 sm:px-6 md:px-8 lg:px-10 mt-10 min-w-[328px] w-[60%] mx-auto md:w-full">
                 {services.map((service, index) => (
                     <ServiceCard key={index} service={service} />
                 ))}
