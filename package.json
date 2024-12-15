@@ -9,13 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/free-brands-svg-icons": "^6.7.1",
+    "@fortawesome/free-regular-svg-icons": "^6.7.1",
+    "@fortawesome/free-solid-svg-icons": "^6.7.1",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@types/react-fontawesome": "^1.6.8",
     "@types/react-motion": "^0.0.40",
     "lucide-react": "^0.468.0",
     "motion": "^12.0.0-alpha.2",
     "next": "15.0.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-icons": "^5.4.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@fluejs/noscroll": "^1.0.0",

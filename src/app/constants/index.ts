@@ -17,6 +17,8 @@ import client1 from "../../../public/client 1.png";
 import client2 from "../../../public/client 2.png";
 import client3 from "../../../public/client 3.png";
 
+
+
 import groomingTrends from "../../../public/groomingTrends.webp";
 import hairMaintenance from "../../../public/hairMaintenance.jpg";
 import groomingBeard from "../../../public/grooming_beard.jpg";
@@ -29,6 +31,13 @@ import facialTreatment from "../../../public/facialTreatment.jpeg";
 import appoint from "../../../public/appoint.jpg";
 import hairProducts from "../../../public/hairProduts.jpg";
 import DIYBeard from "../../../public/DIYBeard.jpg";
+
+import marlon from "../../../public/marlon.jpg";
+import john from "../../../public/john.jpg";
+import derek from "../../../public/derrek.jpg";
+import jerry from "../../../public/jerry.jpg";
+import james from "../../../public/james.jpg";
+import kevin from "../../../public/kevin.jpg";
 
 import { StaticImageData } from "next/image";
 
@@ -346,5 +355,93 @@ export const blogPosts: BlogPost[] = [
     imageUrl: DIYBeard,
     alt: "DIY grooming tips",
     link: "/blog/diy-grooming-tips",
+  },
+];
+
+export interface Barber {
+  id: number;
+  name: string;
+  socialLinks: {
+    facebook: string;
+    twitter: string;
+    instagram: string;
+  };
+  imageUrl: StaticImageData;
+  alt: string;
+  bookingLink: string;
+}
+
+export const barbers: Barber[] = [
+  {
+    id: 1,
+    name: "Marlon McDonald",
+    socialLinks: {
+      facebook: "https://facebook.com/marlonmcdonald",
+      twitter: "https://twitter.com/marlonmcdonald",
+      instagram: "https://instagram.com/marlonmcdonald",
+    },
+    imageUrl: marlon,
+    alt: "Marlon McDonald profile image",
+    bookingLink: "/book/marlon-mcdonald",
+  },
+  {
+    id: 2,
+    name: "Jerry Banks",
+    socialLinks: {
+      facebook: "https://facebook.com/jerrybanks",
+      twitter: "https://twitter.com/jerrybanks",
+      instagram: "https://instagram.com/jerrybanks",
+    },
+    imageUrl: jerry,
+    alt: "Jerry Banks profile image",
+    bookingLink: "/book/jerry-banks",
+  },
+  {
+    id: 3,
+    name: "John Bailey",
+    socialLinks: {
+      facebook: "https://facebook.com/johnbailey",
+      twitter: "https://twitter.com/johnbailey",
+      instagram: "https://instagram.com/johnbailey",
+    },
+    imageUrl: john,
+    alt: "John Bailey profile image",
+    bookingLink: "/book/john-bailey",
+  },
+  {
+    id: 4,
+    name: "Derek Jordan",
+    socialLinks: {
+      facebook: "https://facebook.com/derekjordan",
+      twitter: "https://twitter.com/derekjordan",
+      instagram: "https://instagram.com/derekjordan",
+    },
+    imageUrl: derek,
+    alt: "Derek Jordan profile image",
+    bookingLink: "/book/derek-jordan",
+  },
+  {
+    id: 5,
+    name: "Kevin Brooks",
+    socialLinks: {
+      facebook: "https://facebook.com/kevinbrooks",
+      twitter: "https://twitter.com/kevinbrooks",
+      instagram: "https://instagram.com/kevinbrooks",
+    },
+    imageUrl: kevin,
+    alt: "Kevin Brooks profile image",
+    bookingLink: "/book/kevin-brooks",
+  },
+  {
+    id: 6,
+    name: "James Bailey",
+    socialLinks: {
+      facebook: "https://facebook.com/jamesbailey",
+      twitter: "https://twitter.com/jamesbailey",
+      instagram: "https://instagram.com/jamesbailey",
+    },
+    imageUrl: james,
+    alt: "James Bailey profile image",
+    bookingLink: "/book/james-bailey",
   },
 ];
