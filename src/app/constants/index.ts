@@ -17,11 +17,33 @@ import client1 from "../../../public/client 1.png";
 import client2 from "../../../public/client 2.png";
 import client3 from "../../../public/client 3.png";
 
+import groomingTrends from "../../../public/groomingTrends.webp";
+import hairMaintenance from "../../../public/hairMaintenance.jpg";
+import groomingBeard from "../../../public/grooming_beard.jpg";
+import shavingMistakes from "../../../public/shavingMistakes.png";
+import haircut from "../../../public/haircut.jpg";
+import skincare from "../../../public/skincare.webp";
+import blackHairstyles from "../../../public/blackHairstyles.jpeg";
+import chooseBarber from "../../../public/chooseBarber.jpeg";
+import facialTreatment from "../../../public/facialTreatment.jpeg";
+import appoint from "../../../public/appoint.jpg";
+import hairProducts from "../../../public/hairProduts.jpg";
+import DIYBeard from "../../../public/DIYBeard.jpg";
+
 import { StaticImageData } from "next/image";
 
 export const abril = Abril_Fatface({ subsets: ["latin"], weight: "400" });
 export const bebas = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 export const inter = Inter({ subsets: ["latin"] });
+
+export interface BlogPost {
+  id: number;
+  title: string;
+  description: string;
+  imageUrl: StaticImageData;
+  alt: string;
+  link: string;
+}
 
 export interface ContactInfo {
   id: number;
@@ -211,5 +233,118 @@ export const pricingItems: PricingItem[] = [
     description:
       "Rejuvenate your skin with a relaxing facial treatment designed to cleanse, hydrate, and refresh your complexion.",
     price: 20,
+  },
+];
+
+
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: 1,
+    title: "The Secret to a Perfect Haircut",
+    description:
+      "Discover how expert barbers craft precision haircuts that complement your style and personality. Tips and trends for 2024.",
+    imageUrl: haircut,
+    alt: "Barber cutting hair",
+    link: "/blog/perfect-haircut-tips",
+  },
+  {
+    id: 2,
+    title: "Beard Grooming Essentials",
+    description:
+      "From trimming techniques to the best beard oils, learn how to maintain a sharp, healthy-looking beard at all times.",
+    imageUrl: groomingBeard,
+    alt: "Beard grooming essentials",
+    link: "/blog/beard-grooming-essentials",
+  },
+  {
+    id: 3,
+    title: "Top Shaving Mistakes and How to Avoid Them",
+    description:
+      "Say goodbye to irritation and cuts. Explore the most common shaving mistakes and learn the best practices for a clean, smooth shave.",
+    imageUrl: shavingMistakes,
+    alt: "Man shaving with razor",
+    link: "/blog/shaving-mistakes-to-avoid",
+  },
+  {
+    id: 4,
+    title: "Skincare Routines for a Healthy Glow",
+    description:
+      "Upgrade your skincare game with expert advice on facials, exfoliation, and hydration for men to achieve flawless skin.",
+    imageUrl: skincare,
+    alt: "Skincare facial routine",
+    link: "/blog/skincare-routine-for-men",
+  },
+  {
+    id: 5,
+    title: "Top Black Male Hairstyles for Every Occasion",
+    description:
+      "From fades and twists to afro styles and locs, discover versatile and stylish Black male hairstyles perfect for any event or season.",
+    imageUrl: blackHairstyles,
+    alt: "Black male hairstyle ideas",
+    link: "/blog/black-male-hairstyles",
+  },
+  {
+    id: 6,
+    title: "Choosing the Right Barber: What to Look For",
+    description:
+      "Finding the perfect barber can make all the difference. Learn the top qualities to look for in your next barber.",
+    imageUrl: chooseBarber,
+    alt: "Barber shop interior",
+    link: "/blog/choosing-the-right-barber",
+  },
+  {
+    id: 7,
+    title: "How to Maintain Your Hair Between Salon Visits",
+    description:
+      "Keep your hair looking sharp with simple maintenance tips. Learn to extend the life of your haircut with at-home care.",
+    imageUrl: hairMaintenance,
+    alt: "Man combing hair",
+    link: "/blog/hair-maintenance-tips",
+  },
+  {
+    id: 8,
+    title: "The Benefits of Professional Facial Treatments",
+    description:
+      "Unwind and rejuvenate with a professional facial. Discover how regular treatments can improve skin health and appearance.",
+    imageUrl: facialTreatment,
+    alt: "Facial treatment for men",
+    link: "/blog/professional-facial-benefits",
+  },
+  {
+    id: 9,
+    title: "Men's Grooming Trends for the Modern Gentleman",
+    description:
+      "Stay ahead of the curve with the latest grooming trends in 2024. From haircuts to skincare, find what works for you.",
+    imageUrl: groomingTrends,
+    alt: "Modern grooming trends",
+    link: "/blog/mens-grooming-trends",
+  },
+  {
+    id: 10,
+    title: "Top Hair Products Every Man Should Own",
+    description:
+      "Find out which hair products make the cut—whether it’s pomade, wax, or styling cream—for different hair types and styles.",
+    imageUrl: hairProducts,
+    alt: "Hair products for men",
+    link: "/blog/top-hair-products-for-men",
+  },
+  {
+    id: 11,
+    title: "How to Prepare for Your Next Barber Appointment",
+    description:
+      "Get the most out of your next barber visit with these preparation tips. Learn how to communicate your desired style effectively.",
+    imageUrl: appoint,
+    alt: "Barber appointment preparation",
+    link: "/blog/prepare-for-barber-visit",
+  },
+  {
+    id: 12,
+    title: "Simple DIY Grooming Tips for Busy Men",
+    description:
+      "Short on time? Here are quick, effective grooming hacks to keep you looking sharp without breaking the bank or the clock.",
+    imageUrl: DIYBeard,
+    alt: "DIY grooming tips",
+    link: "/blog/diy-grooming-tips",
   },
 ];

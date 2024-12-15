@@ -13,7 +13,7 @@ const ServiceCard = ({ service }: Props) => {
     return (
         <motion.div
             key={service.id}
-            className={`border border-themeYellow md:h-[310px] ${pathname ==="services"? "md:w-[45%]" : "md:w-[25%]"} p-8 flex flex-col items-center text-center`}
+            className={`border border-themeYellow md:h-[310px] ${pathname ==="/services"? "md:w-[30%]" : "md:w-[35%]"} p-8 flex flex-col items-center text-center`}
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }} 
             viewport={{ once: true, amount: 0.2 }} 

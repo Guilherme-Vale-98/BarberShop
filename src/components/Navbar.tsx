@@ -31,7 +31,7 @@ const Navbar = (props: Props) => {
 
   return (
     <>
-      <nav className='flex pb-[40px] px-[72px] pt-[40px] bg-black justify-between w-full'>
+      <nav className='flex  pb-[40px] px-[72px] pt-[40px] bg-black justify-between w-full'>
         <div>
           <ScissorsIcon size={48} color="#E9C664" strokeWidth={2.75} />
         </div>
@@ -58,7 +58,7 @@ const Navbar = (props: Props) => {
         initial={{ height: 0 }}
         animate={{ height: openNavigation ? 360 : 0 }}
         transition={{ duration: 0.6, ease: 'easeInOut' }}
-        className='w-full overflow-hidden bg-amber-500'>
+        className='w-full  overflow-hidden bg-amber-500'>
           <div className='flex flex-col items-center space-y-6'>
             {navItems.map((navItem) => (
               <Link
