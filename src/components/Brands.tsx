@@ -20,23 +20,23 @@ const Brands = (props: Props) => {
           porttitor, vitae volutpat nibh mollis. Nulla
           porta risus id neque. </div>
       </div>
-      <div className="grid py-4 items-center border-t-2 border-t-themeYellow md:border-t-0 md:border-l-2 md:border-l-themeYellow w-full mx-10 md:w-full grid-cols-1  md:grid-cols-2  lg:grid-cols-3 gap-6 pl-6 md:pl-14">
-        <div className="flex justify-center items-center w-32 h-32 mx-auto">
+      <div className="grid py-4 items-center border-t-2 border-t-themeYellow md:border-t-0 md:border-l-2 md:border-l-themeYellow w-full mx-10 md:w-full grid-cols-2  sm:grid-cols-2  lg:grid-cols-3 gap-4 sm:gap-6 sm:pl-6 md:pl-14">
+        <div className="flex justify-center items-center  sm:w-32  sm:h-32 mx-auto">
           <Image src={logo1} alt="Brand 1 Logo" layout="intrinsic" width={128} height={128} />
         </div>
-        <div className="flex justify-center items-center  w-32 h-32 mx-auto">
+        <div className="flex justify-center items-center  sm:w-32  sm:h-32 mx-auto">
           <Image src={logo2} alt="Brand 2 Logo" layout="intrinsic" width={128} height={128} />
         </div>
-        <div className="flex justify-center items-center  w-32 h-32 mx-auto">
+        <div className="flex justify-center items-center  sm:w-32  sm:h-32 mx-auto">
           <Image src={logo3} alt="Brand 3 Logo" layout="intrinsic" width={128} height={128} />
         </div>
-        <div className="flex justify-center items-center  w-32 h-32 mx-auto">
+        <div className="flex justify-center items-center  sm:w-32  sm:h-32 mx-auto">
           <Image src={logo4} alt="Brand 4 Logo" layout="intrinsic" width={128} height={128} />
         </div>
-        <div className="flex justify-center items-center  w-32 h-32 mx-auto">
+        <div className="flex justify-center items-center  sm:w-32  sm:h-32 mx-auto">
           <Image src={logo5} alt="Brand 5 Logo" layout="intrinsic" width={128} height={128} />
         </div>
-        <div className="flex justify-center items-center  w-32 h-32 mx-auto">
+        <div className="flex justify-center items-center  sm:w-32  sm:h-32 mx-auto">
           <Image src={logo6} alt="Brand 6 Logo" layout="intrinsic" width={128} height={128} />
         </div>
       </div>
