@@ -16,7 +16,7 @@ const ServiceCard = ({ service }: Props) => {
             className={`border border-themeYellow md:h-[310px] ${pathname ==="/services"? "md:w-[30%]" : "md:w-[45%]"} p-8 flex flex-col items-center text-center`}
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }} 
-            viewport={{ once: true, amount: 0.2 }} 
+            viewport={{ once: true, amount: 0.1 }} 
             transition={{
                 duration: 0.5,
                 delay: service.id * 0.2, 

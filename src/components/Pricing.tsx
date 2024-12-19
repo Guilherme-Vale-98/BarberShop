@@ -8,7 +8,7 @@ type Props = {}
 
 const Pricing = (props: Props) => {
     return (
-        <section className='bg-[#212121] px-[72px] py-[60px] flex flex-col'>
+        <section className='bg-[#212121] md:px-[72px] py-[60px] flex flex-col'>
             <div className=' sm:gap-x-[110px] md:gap-x-[170px] grid sm:grid-rows-2 lg:px-[122px] gap-y-14 sm:grid-cols-2'>
                 {pricingItems.map(pricingItem => (
                     <div className=''>
@@ -25,9 +25,9 @@ const Pricing = (props: Props) => {
                 <div className='bg-themeYellow relative p-5 md:p-14 xl:p-28 md:w-[70%] xl:w-[55%] 
                 h-[380px] md:h-[500px]'>
                     <div className={` w-full h-full`}>
-                        <p className={`mb-4 font-black text-[14px] sm:text-[18px] xl:text-[20px] ${inter.className}`}>THIS WEEKS NEW PRODUCTS</p>
-                        <p className={`mb-3  text-[24px] sm:text-[35px] xl:text-[50px] font-black ${abril.className}`}>25% DISCOUNT</p>
-                        <p className={`text-[13px] sm:text-[16px] ${inter.className}`}>This premium beard cream deeply nourishes and softens facial hair, leaving it manageable and smooth. Perfect for daily use, it enhances beard health and delivers a fresh, clean finish.</p>
+                        <p className={`mb-4 font-black text-[18px] xl:text-[20px] ${inter.className}`}>THIS WEEKS NEW PRODUCTS</p>
+                        <p className={`mb-3 text-[35px] xl:text-[50px] font-black ${abril.className}`}>25% DISCOUNT</p>
+                        <p className={`text-[16px] ${inter.className}`}>This premium beard cream deeply nourishes and softens facial hair, leaving it manageable and smooth. Perfect for daily use, it enhances beard health and delivers a fresh, clean finish.</p>
 
                         <Button className='!w-[100px] sm:!w-[190px] mt-6 md:mt-10 !border-0 !bg-black !text-white'>BUY NOW</Button>
                     </div>

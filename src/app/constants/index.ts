@@ -200,7 +200,7 @@ export const contactInfos: ContactInfo[] = [
   {
     id: 4,
     title: "Working Hours",
-    value: ["Mon - Fri: 10am - 6pm", "Sat - Sun: 10am - 6pm"],
+    value: ["Mon - Fri: 10am - 6pm", "Sat - Sun: 10am - 14pm"],
     icon: iconClock,
     alt: "Icon representing working hours",
   },
@@ -322,7 +322,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 9,
-    title: "Men's Grooming Trends for the Modern Gentleman",
+    title: "Modern Men's Grooming Trends",
     description:
       "Stay ahead of the curve with the latest grooming trends in 2024. From haircuts to skincare, find what works for you.",
     imageUrl: groomingTrends,

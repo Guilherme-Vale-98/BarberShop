@@ -15,7 +15,7 @@ const NewsCard = ({ blogPost }: Props) => {
             <div className="h-[360px] relative flex items-center flex-col justify-end overflow-hidden mb-6">
                 <Image
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 300px"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 120vw, 300px"
                     alt={blogPost.alt}
                     src={blogPost.imageUrl}
                     className='object-cover'

@@ -8,12 +8,12 @@ type Props = {
 
 const Header = ({title}: Props) => {
   return (
-    <div className={`${abril.className} relative flex items-center justify-center 
+    <header className={`${abril.className} relative flex items-center justify-center 
     text-[60px] text-white
      h-[250px]`}>
         <Image fill className='object-cover absolute inset-0 -z-10' src={servicesHeader} alt='Barber shop chair' />
         {title}
-    </div>
+    </header>
   )
 }
 
