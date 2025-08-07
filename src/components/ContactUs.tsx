@@ -1,11 +1,9 @@
 import { abril, contactInfos, inter } from '@/app/constants'
-import Image from 'next/image'
-import React from 'react'
 import ContactItem from './ContactItem'
 
-type Props = {}
 
-const ContactUs = (props: Props) => {
+
+const ContactUs = () => {
     return (
         <section className='px-14 md:px-[72px] py-[40px]'>
             <div className='mb-[60px]'>
@@ -14,7 +12,7 @@ const ContactUs = (props: Props) => {
                     nisl placerat, tempus erat a, condimentum metusurabitur nulla nisi.</p>
             </div>
             <div className='flex gap-10 md:gap-0 flex-wrap lg:flex-nowrap sm:px-20 justify-center lg:justify-between '>
-                {contactInfos.map(contactInfo => <ContactItem contactInfo={contactInfo}/>)}
+                {contactInfos.map(contactInfo => <ContactItem key={contactInfo.id} contactInfo={contactInfo}/>)}
             </div>
         </section>
     )

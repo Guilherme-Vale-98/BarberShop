@@ -1,15 +1,10 @@
 "use client"
-import React from 'react'
 
 
 import { motion } from "motion/react"
 import { abril } from '@/app/constants'
 
-type Props = {}
-
-
-
-const Hero = (props: Props) => {
+const Hero = () => {
     const fadeInUp = {
         hidden: { opacity: 0, y: 70 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },

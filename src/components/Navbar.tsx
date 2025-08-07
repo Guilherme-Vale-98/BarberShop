@@ -1,14 +1,14 @@
 "use client"
 import Link from 'next/link'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Button from './Button'
 import { usePathname } from 'next/navigation'
 import { Scissors as ScissorsIcon, SquareMenu as SquareMenuIcon, SquareX as SquareXIcon} from 'lucide-react';
 import { disablePageScroll, enablePageScroll } from '@fluejs/noscroll';
 import { motion } from "motion/react"
-type Props = {}
 
-const Navbar = (props: Props) => {
+
+const Navbar = () => {
   const pathname = usePathname();
   const [openNavigation, setOpenNavigation] = useState(false);
   const navItems = [

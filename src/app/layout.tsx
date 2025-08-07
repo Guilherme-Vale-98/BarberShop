@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import {inter} from "./constants/index"
 import "./globals.css";
 import Navbar from "@/components/Navbar";

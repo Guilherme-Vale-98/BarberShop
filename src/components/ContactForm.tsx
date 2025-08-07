@@ -2,9 +2,8 @@ import { abril, inter } from '@/app/constants'
 import React from 'react'
 import Button from './Button'
 
-type Props = {}
 
-const ContactForm = (props: Props) => {
+const ContactForm = () => {
     return (
         <section className=' bg-black flex flex-wrap items-center justify-center md:flex-nowrap gap-10 text-white pt-[90px] pb-[60px] px-[20px] md:px-[60px]'>
             <div className=' flex items-center flex-col md:w-1/2'>

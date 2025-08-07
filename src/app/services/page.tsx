@@ -7,9 +7,8 @@ import Review from '@/components/Review'
 import ContactUs from '@/components/ContactUs'
 import Blog from '@/components/Blog'
 
-type Props = {}
 
-const page = (props: Props) => {
+const page = () => {
   return (
     <div>
         <Header title='SERVICES'/>

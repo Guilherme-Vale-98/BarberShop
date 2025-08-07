@@ -3,11 +3,8 @@ import Brands from '@/components/Brands'
 import ContactUs from '@/components/ContactUs'
 import Counter from '@/components/Counter'
 import Header from '@/components/Header'
-import React from 'react'
 
-type Props = {}
-
-const page = (props: Props) => {
+const page = () => {
   return (
     <div>
       <Header title='ABOUT US' />

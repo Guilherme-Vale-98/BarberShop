@@ -2,9 +2,9 @@ import { abril, reviewItems } from '@/app/constants'
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
 
-const Review = (props: Props) => {
+
+const Review = () => {
    return (
        <section className='px-14 md:px-[72px] py-[60px]'>
            <div className='w-full'>
@@ -27,7 +27,7 @@ const Review = (props: Props) => {
                                />
                            </div>
                            <p className='text-base sm:text-lg text-themeYellow font-semibold mb-2'>{item.name}</p>
-                           <p className='text-sm sm:text-base text-gray-600 italic'>"{item.review}"</p>
+                           <p className='text-sm sm:text-base text-gray-600 italic'>&quot;{item.review}&quot;</p>
                        </div>
                    ))}
                </div>

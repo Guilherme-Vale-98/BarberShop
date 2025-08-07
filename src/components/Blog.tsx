@@ -1,20 +1,12 @@
 "use client"
-import Image, { StaticImageData } from "next/image";
-import { abril, blogPosts, inter, services } from "../app/constants/index";
-import React, { useState } from "react";
-import ServiceCard from "./ServiceCard";
-import Button from "./Button";
+import { abril, blogPosts, inter } from "../app/constants/index";
+import  { useState } from "react";
+
 import NewsCard from "./NewsCard";
 import { usePathname } from "next/navigation";
-import { ChevronLeft, ChevronRight, SquareArrowLeft, SquareArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-type Props = {
-
-};
-
-
-
-const Blog = (props: Props) => {
+const Blog = () => {
     const pathname = usePathname()
     const [currentPage, setCurrentPage] = useState(1);
     const postsPerPage = 8;

@@ -1,14 +1,7 @@
-import Image, { StaticImageData } from "next/image";
-import { abril, barbers, blogPosts, inter, services } from "../app/constants/index";
-import React from "react";
-import ServiceCard from "./ServiceCard";
-import Button from "./Button";
-import NewsCard from "./NewsCard";
+import { abril, barbers, inter} from "../app/constants/index";
+
 import BarbersCard from "./BarbersCard";
 
-type Props = {
-
-};
 
 const renderCards = ()=>{
     return(
@@ -20,7 +13,7 @@ const renderCards = ()=>{
     )
 }
 
-const Barbers = (props: Props) => {
+const Barbers = () => {
     return (
         <section className="w-full pb-10 overflow-hidden text-black relative">
             <div className="text-center pt-10 w-full">

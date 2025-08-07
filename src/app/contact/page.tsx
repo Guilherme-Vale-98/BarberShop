@@ -4,9 +4,9 @@ import Header from '@/components/Header'
 import Pricing from '@/components/Pricing'
 import React from 'react'
 
-type Props = {}
 
-const page = (props: Props) => {
+
+const page = () => {
   return (
     <>
         <Header title='CONTACT US'/>

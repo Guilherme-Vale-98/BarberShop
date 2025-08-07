@@ -6,13 +6,11 @@ import logo3 from '../../public/logo3.png';
 import logo4 from '../../public/logo4.png';
 import logo5 from '../../public/logo5.png';
 import logo6 from '../../public/logo6.png';
-import React from 'react';
+
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-type Props = {};
-
-const Brands = (props: Props) => {
+const Brands = () => {
   const logoVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: (index: number) => ({

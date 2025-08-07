@@ -1,5 +1,3 @@
-import React from 'react'
-import Button from './Button'
 import { abril, BlogPost, inter } from '@/app/constants'
 import Image from 'next/image'
 

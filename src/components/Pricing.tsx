@@ -1,17 +1,17 @@
 import { abril, inter, pricingItems } from '@/app/constants'
 import product from '../../public/product.webp'
 import Image from 'next/image'
-import React from 'react'
+
 import Button from './Button'
 
-type Props = {}
 
-const Pricing = (props: Props) => {
+
+const Pricing = () => {
     return (
         <section className='bg-[#212121] md:px-[72px] py-[60px] flex flex-col'>
             <div className=' sm:gap-x-[110px] md:gap-x-[170px] grid sm:grid-rows-2 lg:px-[122px] gap-y-14 sm:grid-cols-2'>
                 {pricingItems.map(pricingItem => (
-                    <div className=''>
+                    <div key={pricingItem.id} className=''>
                         <div className={`${abril.className} pb-2 items-center flex text-[24px] text-white`}>
                             <div>{pricingItem.title}</div>
                             <div className='bg-themeYellow mx-4 w-full h-[1px]'></div>

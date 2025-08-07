@@ -1,10 +1,8 @@
-import React from 'react'
 import Button from './Button'
-import { abril, Barber, BlogPost, inter } from '@/app/constants'
+import { abril, Barber } from '@/app/constants'
 import Image from 'next/image'
 import { LucideInstagram as InstagramIcon, FacebookIcon as FacebookIcon, TwitterIcon as TwitterIcon} from 'lucide-react';
-import { faSquareInstagram } from '@fortawesome/free-brands-svg-icons/faSquareInstagram';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 type Props = {
     barber: Barber
