@@ -34,7 +34,7 @@ const BarbersCard = ({ barber }: Props) => {
                     <FacebookIcon size={28} color="#E9C664"  />
                     <TwitterIcon size={28} color="#E9C664"  />        
                 </div>
-                <Button className='mx-auto mb-[25px]'>BOOK</Button>
+                <Button className='mx-auto mb-[25px] font-semibold hover:bg-themeYellow hover:text-black'>BOOK</Button>
             </div>
         </div>
     )
